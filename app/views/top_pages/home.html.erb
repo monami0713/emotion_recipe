@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>きもちのレシピ</title>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true  %>
+	  <%= stylesheet_link_tag 'application', media: 'all',
+		  'data-turbolinks-track' => true %>
+  </head>
+  <body>
+	  <div id="main">
+	   <div class='title'>
+		   <%= image_tag("title.gif") %>
+           </div>
+   </div>
+   <div class="content">
+	   <div class="left">
+		   <div class="tyumoku-left">注目の記事</div>
+		   <div class="article-left">
+		   <%= image_tag("book.jpg", :class => "main_img") %>
+		   <div class="article_title">恋愛している時に読みたい本</div>
+	   </div>
+	           <div class="article-right">
+		   <%= image_tag("work.jpg", :class => "main_img") %>
+		   <div class="article_title">モチベーションを上げたい時に<br>観たい映画</div>
+		   </div>
+           </div>
+	   <div class="right">
+             <div class="tyumoku-left">今のきもちから選ぶ</div>
+           </div>
+         
+   </div>
+  </body>
+</html>
