@@ -15,17 +15,19 @@
    <div class="content">
 	   <div class="left">
 		   <div class="tyumoku-left">注目の記事</div>
+                   <% @all_contents.each do |contents| %>
 		   <div class="article-left">
 		   <%= image_tag("book.jpg", :class => "main_img") %>
-		   <div class="article_title">恋愛している時に読みたい本</div>
-	   </div>
-	           <div class="article-right">
-		   <%= image_tag("work.jpg", :class => "main_img") %>
-		   <div class="article_title">モチベーションを上げたい時に<br>観たい映画</div>
-		   </div>
+		   <div class="article_title"><%= contents.title %></div>
+	           </div>
+	           <% end %>
            </div>
 	   <div class="right">
-             <div class="tyumoku-left">今のきもちから選ぶ</div>
+		   <div class="tyumoku-left">今のきもちから選ぶ</div>
+		   <%= link_to "たのしい", { :controller => "top_pages", :action => "home" }, :class => "btn_happy" %>
+		   <%= link_to "かなしい", { :controller => "top_pages", :action => "home" }, :class => "btn_sad" %>
+		   <%= link_to "いそがしい", { :controller => "top_pages", :action => "home" }, :class => "btn_busy" %>
+		   <%= link_to "すき", { :controller => "top_pages", :action => "home" }, :class => "btn_love" %>
            </div>
          
    </div>

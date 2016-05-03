@@ -1,0 +1,18 @@
+<h1>記事登録画面</h1>
+<%= form_for TopPage.new, :url => {:action => :create} do |f| %>
+	<%= f.label :title %>
+	<%= f.text_field :title %>
+	<br>
+	<%= f.select :emotion, ["うれしい", "かなしい", "いそがしい", "すき"] %>
+	<br>
+	<%= f.file_field :img, accept: "image/jpeg" %>
+	<br>
+	<%= f.label :description %>
+	<%= f.text_area :description %>
+	<br>
+	<%= f.label :main_text %>
+	<%= f.text_area :main_text %>
+	<br>
+	<%= f.submit %>
+<% end %>
+

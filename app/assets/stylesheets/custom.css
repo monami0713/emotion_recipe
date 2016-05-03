@@ -44,7 +44,7 @@
 }
 
 .main_img{
-  margin-top: 30px;
+  margin: 20px;
   width: 300px;
 }
 
@@ -53,6 +53,7 @@
   font-family: 'Montserrat',sans-serif;
   font-weight: bold;
   color: #745758;
+  margin-left: 20px;
 }
 
 .article-left{
@@ -62,4 +63,112 @@ float: left;
 .article-right{
 float: left;
 margin-left: 20px;
+}
+
+.btn_happy {
+	margin-right: 20px;
+	float: left;
+	font-size: 10px;
+	width: 50px;
+	height: 26px;
+	background: #FFF;
+	border: 2px dotted #ffbf7f;
+	border-radius: 70px;
+	-moz-border-radius: 70px;
+	-webkit-border-radius: 70px;
+	color: #ffbf7f;
+	padding: 32px 10px 10px;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	font-size: 70%;
+	transition: background-color 0.5s ease-in;
+	-webkit-transition: background-color 0.5s ease-in;
+	    margin-top: 20px;
+    }
+
+.btn_happy:hover {
+	background: #ffbf7f;
+	color: #FFF;
+	border: 2px dotted #FFF;
+}
+.btn_sad {
+	float: left;
+	font-size: 10px;
+	width: 50px;
+	height: 26px;
+	background: #FFF;
+	border: 2px dotted #7f7fff;
+	border-radius: 70px;
+	-moz-border-radius: 70px;
+	-webkit-border-radius: 70px;
+	color: #7f7fff;
+	padding: 32px 10px 10px;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	font-size: 70%;
+	transition: background-color 0.5s ease-in;
+	-webkit-transition: background-color 0.5s ease-in;
+	    margin-top: 20px;
+    }
+
+.btn_sad:hover {
+	background: #7f7fff;
+	color: #FFF;
+	border: 2px dotted #FFF;
+}
+.btn_busy {
+	margin-right: 20px;
+	clear: both;
+	float: left;
+	font-size: 10px;
+	width: 50px;
+	height: 26px;
+	background: #FFF;
+	border: 2px dotted #7fffbf;
+	border-radius: 70px;
+	-moz-border-radius: 70px;
+	-webkit-border-radius: 70px;
+	color: #7fffbf;
+	padding: 32px 10px 10px;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	font-size: 70%;
+	transition: background-color 0.5s ease-in;
+	-webkit-transition: background-color 0.5s ease-in;
+	    margin-top: 20px;
+    }
+
+.btn_busy:hover {
+	background: #7fffbf;
+	color: #FFF;
+	border: 2px dotted #FFF;
+}
+.btn_love {
+	float: left;
+	font-size: 10px;
+	width: 50px;
+	height: 26px;
+	background: #FFF;
+	border: 2px dotted #ff7f7f;
+	border-radius: 70px;
+	-moz-border-radius: 70px;
+	-webkit-border-radius: 70px;
+	color: #ff7f7f;
+	padding: 32px 10px 10px;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	font-size: 70%;
+	transition: background-color 0.5s ease-in;
+	-webkit-transition: background-color 0.5s ease-in;
+	    margin-top: 20px;
+    }
+
+.btn_love:hover {
+	background: #ff7f7f;
+	color: #FFF;
+	border: 2px dotted #FFF;
 }
