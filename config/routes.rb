@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'top_pages/home'
   get 'top_pages/create'
-  get 'top_pages/get_image/:id' => 'top_pages#get_image'
+  get 'top_pages/:id/get_image' => 'top_pages#get_image'
   post 'top_pages/create' => 'top_pages#check'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
