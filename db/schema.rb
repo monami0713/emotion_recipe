@@ -16,11 +16,11 @@ ActiveRecord::Schema.define(version: 20160503102451) do
   create_table "top_pages", force: :cascade do |t|
     t.string   "title",       limit: 255
     t.string   "emotion",     limit: 255
-    t.binary   "img",         limit: 16777215
+    t.binary   "img",         limit: 65535
     t.text     "description", limit: 65535
     t.text     "main_text",   limit: 65535
-    t.datetime "created_at",                   null: false
-    t.datetime "updated_at",                   null: false
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
   end
 
 end

@@ -7,6 +7,12 @@ class TopPagesController < ApplicationController
 
   end
 
+ def get_image
+	     @all_contents = TopPage.all
+	     @image = TopPage.find(params[:id])
+	     send_data @image.img, :type => 'image/jpeg', :disposition => 'inline'
+		   end
+
   def check
 	  @contents = TopPage.new
 	  @contents.title = params[:top_page][:title]

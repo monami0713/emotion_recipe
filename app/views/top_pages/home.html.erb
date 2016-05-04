@@ -17,7 +17,7 @@
 		   <div class="tyumoku-left">注目の記事</div>
                    <% @all_contents.each do |contents| %>
 		   <div class="article-left">
-		   <%= image_tag("book.jpg", :class => "main_img") %>
+		   <%= image_tag(url_for(:action => 'get_image', :id => contents.id), :class => "main_img")%>
 		   <div class="article_title"><%= contents.title %></div>
 	           </div>
 	           <% end %>

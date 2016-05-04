@@ -3,7 +3,7 @@ class CreateTopPages < ActiveRecord::Migration
     create_table :top_pages do |t|
       t.string :title
       t.string :emotion
-      t.binary :img, limit: 10.megabyte
+      t.binary :img
       t.text :description
       t.text :main_text
       t.timestamps null: false

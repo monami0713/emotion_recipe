@@ -2,7 +2,6 @@
   height: 400px;
   width: 100%;
   background: linear-gradient(75deg, #fec3c3, #ffdfb6);
-  position: fixed;
 }
 
 .title{
@@ -10,15 +9,12 @@
 	padding-top: 80px;
 }
 
-.content{
-  margin-top: 400px;
-}
-
 .left{
   width: 700px;
   float: left;
 }
 .tyumoku-left{
+  margin-left: 20px;
   padding: 30px 5px 10px 10px;
   font-family: 'Montserrat',sans-serif;
   color: #e48080;
