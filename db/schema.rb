@@ -11,19 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160504025821) do
+ActiveRecord::Schema.define(version: 20160503102451) do
 
   create_table "top_pages", force: :cascade do |t|
-    t.string   "title",              limit: 255
-    t.string   "emotion",            limit: 255
-    t.text     "description",        limit: 65535
-    t.text     "main_text",          limit: 65535
-    t.datetime "created_at",                       null: false
-    t.datetime "updated_at",                       null: false
-    t.string   "photo_file_name",    limit: 255
-    t.string   "photo_content_type", limit: 255
-    t.integer  "photo_file_size",    limit: 4
-    t.datetime "photo_updated_at"
+    t.string   "title",       limit: 255
+    t.string   "emotion",     limit: 255
+    t.binary   "img",         limit: 4294967295
+    t.text     "description", limit: 65535
+    t.text     "main_text",   limit: 65535
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
   end
 
 end

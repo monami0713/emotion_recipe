@@ -5,7 +5,7 @@
 	<br>
 	<%= f.select :emotion, ["うれしい", "かなしい", "いそがしい", "すき"] %>
 	<br>
-	<%= f.file_field :img, accept: "image/jpeg" %>
+	<%= f.file_field :img, :accept => 'image/jpeg' %>
 	<br>
 	<%= f.label :description %>
 	<%= f.text_area :description %>
