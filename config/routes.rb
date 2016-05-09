@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'top_pages/home'
+  get 'top_pages/show/:id' => 'top_pages#show'
   get 'top_pages/create'
   get 'top_pages/:id/get_image' => 'top_pages#get_image'
   post 'top_pages/create' => 'top_pages#check'

@@ -18,7 +18,9 @@
                    <% @all_contents.each do |contents| %>
 		   <div class="article-left">
 		   <%= image_tag(url_for(:action => 'get_image', :id => contents.id), :class => "main_img")%>
-		   <div class="article_title"><%= contents.title %></div>
+		   <div>
+			   <%= link_to "#{contents.title}", { :controller => "top_pages", :action => "show",:id => contents.id }, :class => "article_title" %>
+	           </div>
 	           </div>
 	           <% end %>
            </div>

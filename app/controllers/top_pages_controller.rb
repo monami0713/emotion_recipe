@@ -13,7 +13,8 @@ class TopPagesController < ApplicationController
   end
 
   def check
-	  @contents = TopPage.new
+	  attr = params.require(:top_page).permit(:title, :img)
+	  @contents = TopPage.new(attr)
 	  @contents.title = params[:top_page][:title]
 	  @contents.emotion = params[:top_page][:emotion]
 	  @contents.img = params[:top_page][:img].read
@@ -22,5 +23,10 @@ class TopPagesController < ApplicationController
 	  @contents.save
 	  @all_contents = TopPage.all
 	  redirect_to :action => "home" 
+  end
+
+  def show
+	  @content = TopPage.find(params[:id])
+	  send_data @image.img, :type => 'image/jpeg', :disposition => 'inline'
   end
 end
