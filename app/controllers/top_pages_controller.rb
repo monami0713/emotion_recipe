@@ -25,8 +25,8 @@ class TopPagesController < ApplicationController
 	  redirect_to :action => "home" 
   end
 
-  def show
-	  @content = TopPage.find(params[:id])
-	  send_data @image.img, :type => 'image/jpeg', :disposition => 'inline'
-  end
+  def show 
+          @content = TopPage.find(params[:id])
+  end	  
+
 end
